@@ -8,7 +8,12 @@ function getRandomInt(max) {
 
 
 function squareGenerator(){ 
-    divAmount = Math.pow(prompt("Choose how many rows you want up to 100"),2);
+    divAmount = Math.pow(prompt("Choose how many rows you want up to 80"),2);
+    console.log(divAmount);
+    if (divAmount > 6400){
+        alert("You've picked too high! try again.")
+        squareGenerator()
+    }
     while (container.firstChild){
         container.firstChild.remove();
     }
@@ -23,8 +28,8 @@ function squareGenerator(){
 
             container.appendChild(square);
             square.addEventListener('mouseover', () => {
-                square.style.background = "black";
-               // square.style.background = `rgb(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)})`;
+               
+                square.style.background = `rgb(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)})`;
                 console.log("Hello");
                 
             });
