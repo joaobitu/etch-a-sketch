@@ -10,7 +10,7 @@ function getRandomInt(max) {
 function squareGenerator(){ 
     divAmount = Math.pow(prompt("Choose how many rows you want up to 80"),2);
     console.log(divAmount);
-    if (divAmount > 6400){
+    if (divAmount > 6400 || divAmount == NaN){
         alert("You've picked too high! try again.")
         squareGenerator()
     }
