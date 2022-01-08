@@ -23,7 +23,8 @@ function squareGenerator(){
 
             container.appendChild(square);
             square.addEventListener('mouseover', () => {
-                square.style.background = `rgb(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)})`;
+                square.style.background = "black";
+               // square.style.background = `rgb(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)})`;
                 console.log("Hello");
                 
             });
